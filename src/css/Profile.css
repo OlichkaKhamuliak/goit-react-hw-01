@@ -1,0 +1,123 @@
+.profile { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 3%;
+    max-width: 350px;
+    overflow: hidden; /* Використовуєм, щоб обрізати контент, який виходить за межі */
+}
+
+.description {
+    text-align: center;
+    margin-bottom: 15px;
+
+ }
+
+.avatar {
+    width: 130px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.tag, 
+.location { 
+    margin-top: 8px;
+    color: rgb(104, 103, 103);
+    font-size: 18px;
+}
+
+.stats-list {
+    display: flex;
+    width: 100%; /* Робимо stats-list 100% шириною */
+    background-color: rgba(128, 128, 128, 0.414);
+}
+
+.stats-list-item {
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid gray;
+    border-bottom: none;
+    flex: 1; /* Рівномірно розподіляє простір між stats-list-item */
+    gap: 5px;
+}
+
+.stats-list-item:first-child, .stats-list-item:last-child {
+    border-left: none;
+    border-right: none;
+}
+
+.value {
+    font-weight: bold;
+}
+@media only screen and (min-width: 768px) {
+    .profile { 
+        max-width: 370px;
+        margin: 30px;
+    }
+
+    .description {
+        margin-bottom: 20px;
+    }
+
+    .avatar {
+        width: 150px;
+        margin-top: 25px;
+        margin-bottom: 30px;
+    }
+
+    .name { 
+        font-size: 35px;
+    }
+
+    .tag, 
+    .location { 
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    .stats-list-item {
+        height: 70px;
+        gap: 7px;
+        font-size: 19px;
+    }
+}
+@media only screen and (min-width: 1280px) {
+    .profile { 
+        max-width: 450px;
+        margin: 40px;
+    }
+    .description {
+        margin-bottom: 25px;
+    }
+
+    .avatar {
+        width: 160px;
+        margin-top:28px;
+        margin-bottom: 32px;
+    }
+
+    .name { 
+        font-size: 45px;
+    }
+
+    .tag, 
+    .location { 
+        margin-top: 12px;
+        font-size: 27px;
+    }
+    
+    .stats-list-item {
+        height: 100px;
+        gap: 9px;
+        font-size: 25px;
+    }
+}

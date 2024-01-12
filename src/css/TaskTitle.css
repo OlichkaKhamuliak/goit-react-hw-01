@@ -1,0 +1,19 @@
+.wrapper-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: rgb(8, 161, 188);
+    margin: 20px;
+}
+@media only screen and (min-width: 768px) {
+    .wrapper-title {
+        font-size: 25px;
+        margin: 30px;
+    }
+}
+@media only screen and (min-width: 1280px) {
+    .wrapper-title {
+        font-size: 30px;
+        margin: 40px;
+    }
+}
