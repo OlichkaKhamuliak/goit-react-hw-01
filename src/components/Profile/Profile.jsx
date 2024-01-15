@@ -8,9 +8,9 @@ export const Profile = (
   const avatarImage = avatar || defaultAvatar;
   const avatarClass = isDefaultAvatar ? css.defaultAvatar : css.customAvatar
 
-  const statsItems = Object.entries(stats).map(([label, value]) => (
-    <li key={label} className={css.statsItem}>
-      <span className={css.label}>{label.charAt(0).toUpperCase() + label.slice(1)}</span>
+  const statsItems = Object.entries(stats).map(([key, value]) => (
+    <li key={key} className={css.statsItem}>
+      <span className={css.label}>{key.charAt(0).toUpperCase() + key.slice(1)}</span>
       <span className={css.value}>{value}</span>
     </li>
   ));
