@@ -1,8 +1,8 @@
 import userData from '../userData.json'
 import friends from '../friends.json'
-import { Profile } from "./Profile"
-import { TaskTitle } from './TaskTitle'
-import { FriendList } from './FriendList'
+import { Profile } from "./Profile/Profile"
+import { TaskTitle } from './TaskTitle/TaskTitle'
+import { FriendList } from './FriendList/FriendList'
 
 export const App = () => {
   return (

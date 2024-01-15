@@ -1,0 +1,129 @@
+.friendList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    max-width: 444px;
+    margin: 20px;
+}
+
+.friendItem {
+    position: relative;
+    border: 2px solid black;
+    border-radius: 5%;
+    width: 100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.statusIcon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.iconOnline {
+    composes: statusIcon;
+    color: green;    
+}
+
+.iconOffline {
+    composes: statusIcon;
+    color: red;    
+}
+
+.avatar {
+    margin: 0 auto;
+    height: 48px;
+}
+
+.name {
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 30px;    
+}
+
+.status {
+    font-size: 25px;
+}
+
+.online {
+    composes: status;
+    color: green;
+}
+
+.offline {
+    composes: status;
+    color: red;
+}
+@media screen and (min-width: 464px) {
+    .friendList {
+      margin-left: auto;
+      margin-right: auto;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .friendList {
+        gap: 20px;
+    }
+            
+    .friendItem {
+        width: 120px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+            
+    .avatar {
+        width: 70px;
+        height: 70px;
+    }
+            
+    .name, .status {
+        margin-top: 10px;
+    }
+    .name {
+        font-size: 35px;
+    }
+
+    .status {
+        font-size: 30px;
+    }
+}
+    @media only screen and (min-width: 1280px) {
+        .friendList {
+            max-width: none;
+            gap: 25px;
+            margin: 40px;
+            justify-content: flex-start;
+        }
+            
+        .friendItem {
+            width: 160px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+        .iconOnline, .iconOffline {
+            top: 7px;
+            right: 7px;
+            width: 20px;
+            height: 20px;
+        }    
+        .avatar {
+            width: 100px;
+            height: 100px;
+        }
+            
+        .name, .status {
+            margin-top: 12px;
+        }
+
+        .name {
+            font-size: 40px;
+        }
+
+        .status {
+            font-size: 35px;
+        }
+      }

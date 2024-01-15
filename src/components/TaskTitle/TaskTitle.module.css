@@ -1,4 +1,4 @@
-.wrapper-title {
+.title {
     font-size: 22px;
     margin-bottom: 20px;
     font-weight: bold;
@@ -6,13 +6,13 @@
     margin: 20px;
 }
 @media only screen and (min-width: 768px) {
-    .wrapper-title {
+    .title {
         font-size: 25px;
         margin: 30px;
     }
 }
 @media only screen and (min-width: 1280px) {
-    .wrapper-title {
+    .title {
         font-size: 30px;
         margin: 40px;
     }
