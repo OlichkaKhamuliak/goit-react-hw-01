@@ -1,5 +1,6 @@
 import css from'./Profile.module.css'
 import defaultAvatar from './avatar.png';
+import { capitalizeFirstLetter } from '../../assets/capitalizeFirstLetter';
 
 export const Profile = (
   { userData: { username, tag, location, avatar, stats } }
@@ -10,7 +11,7 @@ export const Profile = (
 
   const statsItems = Object.entries(stats).map(([key, value]) => (
     <li key={key} className={css.statsItem}>
-      <span className={css.label}>{key.charAt(0).toUpperCase() + key.slice(1)}</span>
+      <span className={css.label}>{capitalizeFirstLetter(key)}</span>
       <span className={css.value}>{value}</span>
     </li>
   ));

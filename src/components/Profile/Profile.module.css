@@ -8,6 +8,7 @@
     border-radius: 3%;
     max-width: 350px;
     overflow: hidden; /* Використовуєм, щоб обрізати контент, який виходить за межі */
+    box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.5);
 }
 
 .description {

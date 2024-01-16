@@ -10,12 +10,13 @@
 
 .friendItem {
     position: relative;
-    border: 2px solid black;
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 5%;
-    width: 100px;
+    width: 110px;
     padding-top: 15px;
     padding-bottom: 15px;
     text-align: center;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
 }
 
 .statusIcon {
@@ -67,10 +68,12 @@
 @media only screen and (min-width: 768px) {
     .friendList {
         gap: 20px;
+        max-width: 600px;
+
     }
             
     .friendItem {
-        width: 120px;
+        width: 140px;
         padding-top: 20px;
         padding-bottom: 20px;
     }
@@ -100,7 +103,7 @@
         }
             
         .friendItem {
-            width: 160px;
+            width: 170px;
             padding-top: 25px;
             padding-bottom: 25px;
         }

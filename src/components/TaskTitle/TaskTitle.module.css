@@ -1,19 +1,21 @@
 .title {
-    font-size: 22px;
+    font-size: 25px;
     margin-bottom: 20px;
     font-weight: bold;
     color: rgb(8, 161, 188);
     margin: 20px;
+    text-align: center;
 }
 @media only screen and (min-width: 768px) {
     .title {
-        font-size: 25px;
+        font-size: 30px;
         margin: 30px;
     }
 }
 @media only screen and (min-width: 1280px) {
     .title {
-        font-size: 30px;
+        text-align: left;
+        font-size: 40px;
         margin: 40px;
     }
 }

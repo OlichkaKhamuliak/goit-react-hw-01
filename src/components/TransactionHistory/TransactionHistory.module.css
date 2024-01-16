@@ -1,0 +1,73 @@
+.wrapper {
+    padding-left: 20px;
+    padding-right: 20px;    
+}
+.table {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 10px rgba(89, 3, 170, 0.5);
+}
+
+.titles{
+    font-size: 25px;
+    background-color: rgb(89, 3, 170);
+    color: rgb(243, 231, 210);
+    line-height: 1.6;
+}
+
+.row {
+    line-height: 1.5;
+}
+
+.even {
+    composes: row;
+    background-color: rgb(151, 89, 208);
+}
+
+.odd {
+    composes: row;
+    background-color: rgb(187, 135, 237);
+}
+
+@media only screen and (min-width: 768px) {
+    .wrapper {
+        padding: 0;  
+    }
+    .table {
+        font-size: 30px;
+        margin-bottom: 30px;
+        max-width: 700px;
+    }
+    
+    .titles{
+        font-size: 35px;
+        line-height: 1.7;
+    }
+    
+    .row {
+        line-height: 1.6;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .table {
+        font-size: 35px;
+        margin-bottom: 30px;
+        max-width: 1200px;
+        margin: 40px;
+    }
+    
+    .titles{
+        font-size: 40px;
+        line-height: 1.9;
+    }
+    
+    .row {
+        line-height: 1.8;
+    }    
+}
