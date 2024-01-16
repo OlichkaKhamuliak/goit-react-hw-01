@@ -5,7 +5,6 @@ import { FaRegCircleCheck } from "react-icons/fa6";
 import { FaRegCircleXmark } from "react-icons/fa6";
 import defaultAnimal from './stingray.png';
 
-
 export const FriendProfile = ({ friends: {avatar, name, isOnline} }) => {
   const animalImage = avatar || defaultAnimal;
 
@@ -18,7 +17,7 @@ export const FriendProfile = ({ friends: {avatar, name, isOnline} }) => {
   // const statusIcon = isOnline ? css.iconOnline : css.iconOffline;
   const statusIcon = isOnline ?
       <FaRegCircleCheck className={css.iconOnline} /> : 
-       <FaRegCircleXmark className={css.iconOffline} />;
+      <FaRegCircleXmark className={css.iconOffline} />;
   return (
     <div>
       {statusIcon}

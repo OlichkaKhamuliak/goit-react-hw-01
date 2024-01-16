@@ -17,21 +17,21 @@ export const TransactionHistory = ({ transactions }) => {
   
   return (
     <div className={css.wrapper}>
-    <table className={css.table}>
-      <thead>
-        <tr className={css.titles}>{headerCells}</tr>
-      </thead>
-      <tbody>
-        {transactions.map((transaction, index) => (
-          <TransactionRow
-            key={transaction.id}
-            transaction={transaction}
-            headerItems={headerItems}
-            index={index}
-          />
-        ))}
-      </tbody>
-    </table>
+      <table className={css.table}>
+        <thead>
+          <tr className={css.titles}>{headerCells}</tr>
+        </thead>
+        <tbody>
+          {transactions.map((transaction, index) => (
+            <TransactionRow
+              key={transaction.id}
+              transaction={transaction}
+              headerItems={headerItems}
+              index={index}
+            />
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 };

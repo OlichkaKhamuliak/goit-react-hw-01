@@ -2,8 +2,7 @@ import css from'./Profile.module.css'
 import defaultAvatar from './avatar.png';
 import { capitalizeFirstLetter } from '../../assets/capitalizeFirstLetter';
 
-export const Profile = (
-  { userData: { username, tag, location, avatar, stats } }
+export const Profile = ( { userData: { username, tag, location, avatar, stats } }
 ) => {
   const isDefaultAvatar = !avatar;
   const avatarImage = avatar || defaultAvatar;
@@ -17,7 +16,6 @@ export const Profile = (
   ));
   return (
     <div className={css.profile}>
-
       <div className={css.description}>
         <img src={avatarImage} alt={`${username}'s avatar`} className={avatarClass} />
         <h1 className={css.name}>{username}</h1>

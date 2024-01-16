@@ -8,13 +8,13 @@ import { TransactionHistory } from './TransactionHistory/TransactionHistory'
 
 export const App = () => {
   return (
-  <div>
-    <TaskTitle>Task 1</TaskTitle>
-    <Profile userData={userData}/>
-    <TaskTitle>Task 2</TaskTitle>
-    <FriendList friends={friends}/>
-    <TaskTitle>Task 3</TaskTitle>
-    <TransactionHistory transactions={transactions}/>
-  </div>
+    <div>
+      <TaskTitle>Task 1</TaskTitle>
+      <Profile userData={userData}/>
+      <TaskTitle>Task 2</TaskTitle>
+      <FriendList friends={friends}/>
+      <TaskTitle>Task 3</TaskTitle>
+      <TransactionHistory transactions={transactions}/>
+    </div>
   )
 }
